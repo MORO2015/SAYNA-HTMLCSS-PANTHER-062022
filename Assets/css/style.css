@@ -1,0 +1,264 @@
+/* Definiton des polices a utiliser */
+@font-face {
+  font-family: "Wakanda forever";
+  src: url("../police/WakandaForever-Regular.ttf");
+}
+@font-face {
+  font-family: "Panthera";
+  src: url("../police/panthera.otf");
+}
+@font-face {
+  font-family: "BEYNO";
+  src: url("../police/BEYNO.otf");
+}
+@font-face {
+  font-family: "Cantarell";
+  src: url("../police/Cantarell-Regular.ttf");
+}
+/* variable pour les differentes couleurs  */
+:root {
+  --color-blanc: #ffffff;
+  --color-rose-faible: #f2cef2;
+  --color-gris-pure: #9e91b7;
+  --color-violet: #df99f2;
+  --color-Bleu: #3d2da6;
+  --color-bleu-pure: #07338c;
+  --color-noir-bleu: #021740;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../Illustrations_Logo/All_pages/arrière_plan.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: var(--color-noir-bleu);
+  /* background-position: center; */
+  /* background-size: cover; */
+}
+#container {
+  width: 80%;
+  margin: 0 auto;
+  /* background-color: red; */
+}
+/* Definition des titres et sous-titre */
+h1 {
+  font-family: "Panthera";
+  font-size: 68px;
+  color: var(--color-gris-pure);
+}
+h2 {
+  font-family: "BEYNO";
+  font-size: 43px;
+  margin-bottom: 20px;
+  color: var(--color-gris-pure);
+}
+.titre {
+  font-family: "BEYNO";
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.texte {
+  font-family: "Cantarell";
+  font-size: 16px;
+  color: var(--color-blanc);
+  margin-bottom: 10px;
+  text-align: justify;
+}
+.voir-plus {
+  font-size: 16px;
+  font-family: "Cantarell";
+  font-weight: bold;
+  color: var(--color-blanc);
+  margin-bottom: 10px;
+}
+.titre-socio {
+  font-family: "Cantarell";
+  font-weight: bold;
+  color: var(--color-blanc);
+  margin-bottom: 20px;
+}
+.citation {
+  font-family: "Cantarell";
+  font-size: 14px;
+  color: var(--color-blanc);
+}
+/* style du header */
+header {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* background-color: yellow; */
+}
+
+header nav {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  /* text-align: center; */
+  align-items: center;
+  /* background-color: red; */
+}
+header nav .logo-sayna {
+  background: transparent;
+}
+header nav ul {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  background: transparent;
+}
+header nav ul li {
+  background: transparent;
+}
+
+header nav ul a {
+  font-family: "BEYNO";
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--color-blanc);
+  background: transparent;
+}
+
+/* style de la section 1 */
+
+#section1 {
+  width: 100%;
+  margin: 0 auto;
+  /* margin-top: 30px; */
+  display: inline-block;
+}
+#section1 .hero {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.titre-acceuil {
+  width: 70%;
+  height: 30%;
+  margin: 0 auto;
+  display: block;
+}
+
+.hero-image {
+  width: 50%;
+}
+.les-heros {
+  width: 100%;
+  display: flex;
+  background-color: var(--color-noir-bleu);
+}
+.les-heros .un-hero {
+  display: flex;
+}
+/* style du concernant la naissane de l'hero */
+#section2 {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 10%;
+}
+.biographie-hero {
+  display: flex;
+  justify-content: space-between;
+}
+.description {
+  width: 50%;
+}
+.image-gauche {
+  width: 40%;
+  text-align: center;
+}
+.bloc {
+  width: 100%;
+  height: ;
+  background-color: var(--color-blanc);
+  border: none;
+  border-radius: 10x;
+}
+.bloc img {
+  position: relative;
+  bottom: 80px;
+}
+.nom-hero {
+  font-family: "Cantarell";
+}
+.texte-autor {
+  font-family: "Cantarell";
+  font-size: 16px;
+  color: var(--color-noir-bleu);
+}
+
+/* style de la section qui concerne a l */
+#section3 {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 10%;
+
+  background-size: auto;
+  background-size: 1000px 1000px, cover;
+}
+/* #section3 .card-font {
+  width: 100%;
+  height: 50%;
+  background-image: url("../Illustrations_Logo/Accueil/Pantherhome7.png");
+  background-repeat: no-repeat;
+} */
+.contact {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--color-blanc);
+  color: var(--color-noir-bleu);
+  border-radius: 30px;
+}
+
+/* style du pied de la pages */
+
+footer {
+  background-image: url("../Illustrations_Logo/All_pages/back_footer.png");
+}
+.pied-page {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.centre-image {
+  height: 400px;
+  width: 400px;
+  background-image: url("../Illustrations_Logo/All_pages/footer1.png");
+  background-repeat: no-repeat;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.card-socio {
+  width: 60%;
+  display: block;
+}
+.card-social {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.texte-fin {
+  margin-top: 200px;
+}
